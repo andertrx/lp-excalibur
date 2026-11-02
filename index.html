@@ -266,6 +266,18 @@
       #sparks { display: none; }
     }
   </style>
+  <!-- Meta Pixel: Pixel de Excalibur -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1025089933690047');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1025089933690047&ev=PageView&noscript=1" alt="" /></noscript>
+  <!-- Fim do Meta Pixel -->
 </head>
 <body>
   <div class="bg" aria-hidden="true"><div class="blob b1"></div><div class="blob b2"></div></div>
@@ -386,7 +398,13 @@
 
     const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
     const $ = id => document.getElementById(id);
-    document.querySelectorAll(".js-wa").forEach(a => a.href = WHATSAPP_LINK);
+    document.querySelectorAll(".js-wa").forEach(a => {
+      a.href = WHATSAPP_LINK;
+      // Evento de Lead no Meta Pixel ao clicar em qualquer botão do Grupo VIP
+      a.addEventListener("click", () => {
+        if (typeof fbq === "function") fbq("track", "Lead", { content_name: "Grupo VIP - Live Black 09/11" });
+      });
+    });
     $("year").textContent = new Date().getFullYear();
 
     // Título letra a letra
