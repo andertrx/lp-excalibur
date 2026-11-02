@@ -98,6 +98,8 @@
     .title { font-size: clamp(84px, 13vw, 184px); line-height: 0.82; text-transform: uppercase; }
     .title .row { display: block; overflow: hidden; padding-bottom: 0.26em; margin-bottom: -0.22em; }
     .title .ch { display: inline-block; transform: translateY(105%); animation: chUp 0.9s var(--ease) forwards; }
+    /* espaço extra embaixo para o gradiente cobrir o cedilha do Ç */
+    .title .ch { padding-bottom: 0.22em; margin-bottom: -0.22em; }
     @keyframes chUp { to { transform: translateY(0); } }
     .title .row.gold { filter: drop-shadow(0 0 36px rgba(242,193,78,0.28)); }
 
@@ -188,6 +190,8 @@
     .t-head .t-live { display: inline-flex; align-items: center; gap: 7px; color: #ffd0d3; }
     .t-title { font-size: 76px; line-height: 0.86; margin: 18px 0 4px; }
     .t-title span { display: block; }
+    .t-title .gold-text { padding-bottom: 0.2em; margin-bottom: -0.2em; }
+    .t-title + .t-sub { margin-top: 10px; }
     .t-sub { font-size: 12px; color: var(--muted); letter-spacing: 0.18em; text-transform: uppercase; }
     .t-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin-top: 22px; background: var(--line); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
     .t-grid div { background: #0c0b09; padding: 12px 14px; }
