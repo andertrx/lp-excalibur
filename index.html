@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Live Black Excalibur</title>
-  <meta name="description" content="Live Black da Excalibur Fitness no Instagram: 09/11 às 19h. Promoções jamais vistas, a última oportunidade do ano. Entre no Grupo VIP do WhatsApp." />
+  <title>Live de Lançamento Excalibur</title>
+  <meta name="description" content="Live de Lançamento da Excalibur Fitness no Instagram: 09/11 às 19h. Novidades em primeira mão e condições exclusivas de lançamento. Entre no Grupo VIP do WhatsApp." />
   <meta name="theme-color" content="#050505" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
-  <meta property="og:title" content="Live Black Excalibur Fitness • 09/11 às 19h" />
-  <meta property="og:description" content="Promoções jamais vistas. A última oportunidade do ano. Entre no Grupo VIP do WhatsApp." />
+  <meta property="og:title" content="Live de Lançamento Excalibur Fitness • 09/11 às 19h" />
+  <meta property="og:description" content="Novidades em primeira mão e condições exclusivas de lançamento. Entre no Grupo VIP do WhatsApp." />
   <meta property="og:type" content="website" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -96,7 +96,7 @@
     .eyebrow::before { content: ""; width: 36px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold)); }
 
     .title { font-size: clamp(84px, 13vw, 184px); line-height: 0.82; text-transform: uppercase; }
-    .title .row { display: block; overflow: hidden; padding-bottom: 0.04em; }
+    .title .row { display: block; overflow: hidden; padding-bottom: 0.26em; margin-bottom: -0.22em; }
     .title .ch { display: inline-block; transform: translateY(105%); animation: chUp 0.9s var(--ease) forwards; }
     @keyframes chUp { to { transform: translateY(0); } }
     .title .row.gold { filter: drop-shadow(0 0 36px rgba(242,193,78,0.28)); }
@@ -322,9 +322,9 @@
         <div class="hero-left">
           <img class="hero-logo in-hero" style="animation-delay:.05s" src="assets/logo.webp" alt="Excalibur Fitness" width="702" height="348" />
           <div class="eyebrow in-hero" style="animation-delay:.12s">apresenta</div>
-          <h1 class="title display" aria-label="Live Black">
-            <span class="row js-split" data-base=".15">Live</span>
-            <span class="row gold js-split" data-base=".35" data-gold>Black</span>
+          <h1 class="title display" aria-label="Live de Lançamento">
+            <span class="row js-split" data-base=".15">Live de</span>
+            <span class="row gold js-split" data-base=".35" data-gold>Lançamento</span>
           </h1>
           <div class="meta in-hero" style="animation-delay:.75s">
             <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> <span><span class="hide-sm">Segunda, </span>09/11<span class="show-sm"> às 19h</span></span></span>
@@ -332,9 +332,9 @@
             <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg> Ao vivo no Instagram</span>
           </div>
           <p class="lead in-hero" style="animation-delay:.9s">
-            As <strong>promoções mais agressivas que a Excalibur já fez</strong>. Ofertas jamais vistas
-            e a <strong>última oportunidade do ano</strong>. A live será <strong>no Instagram</strong>: entre no Grupo VIP do WhatsApp
-            e receba o aviso na hora de começar e as ofertas em primeira mão.
+            A Excalibur Fitness vai apresentar <strong>seus lançamentos em primeira mão</strong>, com
+            <strong>condições exclusivas de lançamento</strong> só durante a live. Será <strong>no Instagram</strong>:
+            entre no Grupo VIP do WhatsApp e receba o aviso na hora de começar.
           </p>
           <div class="cta-wrap in-hero" style="animation-delay:1.05s">
             <a class="cta js-wa" href="https://chat.whatsapp.com/H6RvQedN1mZ69IzcaijAS8?s=sw&amp;p=a&amp;iam=2" target="_blank" rel="noopener">
@@ -361,7 +361,7 @@
               <div class="t-glare"></div>
               <div class="t-top">
                 <div class="t-head"><span>Convite VIP</span><span class="t-live"><span class="dot"></span> Ao vivo</span></div>
-                <div class="t-title display"><span>Live</span><span class="gold-text">Black</span></div>
+                <div class="t-title display"><span>Live de</span><span class="gold-text">Lançamento</span></div>
                 <div class="t-sub">Excalibur Fitness</div>
                 <div class="t-grid">
                   <div><small>Data</small><strong>09/11</strong></div>
@@ -402,7 +402,7 @@
       a.href = WHATSAPP_LINK;
       // Evento de Lead no Meta Pixel ao clicar em qualquer botão do Grupo VIP
       a.addEventListener("click", () => {
-        if (typeof fbq === "function") fbq("track", "Lead", { content_name: "Grupo VIP - Live Black 09/11" });
+        if (typeof fbq === "function") fbq("track", "Lead", { content_name: "Grupo VIP - Live de Lançamento 09/11" });
       });
     });
     $("year").textContent = new Date().getFullYear();
@@ -414,7 +414,7 @@
       [...text].forEach((c, i) => {
         const s = document.createElement("span");
         s.className = "ch" + (row.hasAttribute("data-gold") ? " gold-text" : "");
-        s.textContent = c; s.style.animationDelay = (base + i * 0.06) + "s";
+        s.textContent = c === " " ? "\u00a0" : c; s.style.animationDelay = (base + i * 0.06) + "s";
         if (row.hasAttribute("data-gold")) s.style.animation = `chUp .9s var(--ease) ${base + i * 0.06}s forwards, shine 5s linear infinite`;
         row.appendChild(s);
       });
