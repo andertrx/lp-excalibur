@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Live Black Excalibur</title>
-  <meta name="description" content="Live Black da Excalibur Fitness: 09/11 às 19h. Promoções jamais vistas, a última oportunidade do ano. Entre no Grupo VIP do WhatsApp." />
+  <meta name="description" content="Live Black da Excalibur Fitness no Instagram: 09/11 às 19h. Promoções jamais vistas, a última oportunidade do ano. Entre no Grupo VIP do WhatsApp." />
   <meta name="theme-color" content="#050505" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <meta property="og:title" content="Live Black Excalibur Fitness • 09/11 às 19h" />
@@ -106,7 +106,8 @@
       display: inline-flex; align-items: center; gap: 9px; padding: 10px 16px; border-radius: 12px;
       background: var(--card); border: 1px solid var(--line); font-size: 14px; font-weight: 600;
     }
-    .chip svg { width: 17px; height: 17px; color: var(--gold); }
+    .chip svg { width: 17px; height: 17px; color: var(--gold); flex-shrink: 0; }
+    .show-sm { display: none; }
 
     .lead { max-width: 540px; font-size: clamp(16px, 1.6vw, 18px); color: #cfcabe; margin-bottom: 32px; }
     .lead strong { color: var(--gold-light); font-weight: 700; }
@@ -246,6 +247,7 @@
       .live-pill { font-size: 10px; padding: 6px 10px; letter-spacing: 0.1em; }
       .btn-mini { display: none; }
       .hide-sm { display: none !important; }
+      .show-sm { display: inline !important; }
       .chip { font-size: 13px; padding: 8px 12px; }
       .cd b { font-size: 30px; }
       .lead { font-size: 14.5px; }
@@ -313,14 +315,14 @@
             <span class="row gold js-split" data-base=".35" data-gold>Black</span>
           </h1>
           <div class="meta in-hero" style="animation-delay:.75s">
-            <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Segunda, 09/11</span>
-            <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 19h (Brasília)</span>
-            <span class="chip hide-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8z"/><rect x="2" y="6" width="14" height="12" rx="2"/></svg> Ao vivo</span>
+            <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> <span><span class="hide-sm">Segunda, </span>09/11<span class="show-sm"> às 19h</span></span></span>
+            <span class="chip hide-sm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 19h (Brasília)</span>
+            <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none"/></svg> Ao vivo no Instagram</span>
           </div>
           <p class="lead in-hero" style="animation-delay:.9s">
             As <strong>promoções mais agressivas que a Excalibur já fez</strong>. Ofertas jamais vistas
-            e a <strong>última oportunidade do ano</strong>. Entre no Grupo VIP do WhatsApp e receba
-            o link da live e as ofertas em primeira mão.
+            e a <strong>última oportunidade do ano</strong>. A live será <strong>no Instagram</strong>: entre no Grupo VIP do WhatsApp
+            e receba o aviso na hora de começar e as ofertas em primeira mão.
           </p>
           <div class="cta-wrap in-hero" style="animation-delay:1.05s">
             <a class="cta js-wa" href="https://chat.whatsapp.com/H6RvQedN1mZ69IzcaijAS8?s=sw&amp;p=a&amp;iam=2" target="_blank" rel="noopener">
@@ -352,7 +354,7 @@
                 <div class="t-grid">
                   <div><small>Data</small><strong>09/11</strong></div>
                   <div><small>Horário</small><strong>19h</strong></div>
-                  <div><small>Onde</small><strong>Grupo VIP</strong></div>
+                  <div><small>Onde</small><strong>Instagram</strong></div>
                   <div><small>Acesso</small><strong>Gratuito</strong></div>
                 </div>
               </div>
